@@ -1,0 +1,36 @@
+.services {
+    background-color: #F5F5F5;
+    padding: 9rem 0 14rem;
+}
+.services_grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "sale autoparts"
+                          "sale servicing";
+}
+.sale {
+    grid-area: sale;
+}
+.autoparst {
+    grid-area: autoparts; 
+}
+.servicing {
+    grid-area: servicing;
+}
+.sale_picture {
+    display: block;
+    width: 100%;
+}
+@media screen and (max-width: 800px){
+    .services_grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "sale"
+                             "autoparts"
+                             "servicing";
+    }
+}
