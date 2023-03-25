@@ -1,0 +1,58 @@
+.hot_deals {
+    margin-bottom: 6rem;
+}
+.hot_deals-title {
+    text-align: center;
+    margin-bottom: 3.4rem;
+}
+.hot_deals_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.4rem 1.3rem;
+    color: black;
+}
+.cards_item {
+    position: relative;
+    padding: 2rem;
+    border: 1px solid var(--border-cards);
+    border-radius: 1rem;
+}
+.cards_item-name {
+    margin-bottom: 3.5rem;
+    p {
+        display: inline;
+    }
+    span {
+        color: var(--blue);
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 2.4rem;
+    }
+}
+.cards_item-title {
+    margin-bottom: .6rem;
+}
+.cards_item-picture {
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.cards_item-tth {
+    display: flex;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    p {
+        margin-right: 2rem;
+        img {
+            display: inline-block;
+            margin-right: .5rem;
+        }
+    }
+}
+.cards_item-price {
+    padding: 1.45rem 8.3rem;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
