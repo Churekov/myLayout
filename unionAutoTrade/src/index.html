@@ -48,24 +48,100 @@
         </div>
     </div>
     <main>
-        <div class="services">
-            <section class="wrapper">
+        <section class="services">
+            <div class="wrapper">
                 <div class="services_grid">
-                    <div class="sale">
-                        <img class="sale_picture" src="./images/Rectangle4.jpg" alt="">
+                    <figure class="sale services_wrapper-small">
+                        <img class="services_picture" src="./images/Rectangle4.jpg" alt="">
+                        <figcaption class="services_picture-title">CARS FOR SALE</figcaption>
+                        <a href="#" class="services_link">MORE</a>
+                    </figure>
+                    <div class="autoparst services_wrapper-small">
+                        <img class="services_picture" src="./images/Rectangle5.jpg" alt="">
+                        <figcaption class="services_picture-title">AUTOPARTS</figcaption>
+                        <a href="#" class="services_link">MORE</a>
                     </div>
-                    <div class="autoparst">
-                        <img class="sale_picture" src="./images/Rectangle5.jpg" alt="">
-                    </div>
-                    <div class="servicing">
-                        <img class="sale_picture" src="./images/Rectangle6.jpg" alt="">
+                    <div class="servicing services_wrapper-small">
+                        <img class="services_picture" src="./images/Rectangle6.jpg" alt="">
+                        <figcaption class="services_picture-title">SERVICING</figcaption>
+                        <a href="#" class="services_link">MORE</a>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="choose">
+            <div class="wrapper">
+                <h3 class="choose_title">CHOOSE your vehicle</h3>
+                <div class="tabs">
+                    <ul class="tabs_container">
+                        <li data-tab="tab-1" tabindex="1" class="tab_title tab_title-body active_tab">Body type</li>
+                        <li data-tab="tab-2" tabindex="2" class="tab_title tab_title-brand">Brand</li>
+                    </ul>
+                    <div class="tabs_wrapper">
+                        <div id="tab-1" class="tab_content ">
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/suv.svg" alt=""></div>
+                                <div class="body_types-name">SUV</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/Sedan.svg" alt=""></div>
+                                <div class="body_types-name">Sedan</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/Wagon.svg" alt=""></div>
+                                <div class="body_types-name">Wagon</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/hatch.svg" alt=""></div>
+                                <div class="body_types-name">Hatch</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/ute.svg" alt=""></div>
+                                <div class="body_types-name">Ute</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/Convertible.svg" alt=""></div>
+                                <div class="body_types-name">Convertible</div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab_content hidden_tab-content">
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/mesrs.svg" alt=""></div>
+                                <div class="body_types-name">SUV</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/lex.svg" alt=""></div>
+                                <div class="body_types-name">Sedan</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/toyota.svg" alt=""></div>
+                                <div class="body_types-name">Wagon</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/ford.svg" alt=""></div>
+                                <div class="body_types-name">Hatch</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/mitsu.svg" alt=""></div>
+                                <div class="body_types-name">Ute</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/subaru.svg" alt=""></div>
+                                <div class="body_types-name">Convertible</div>
+                            </div>
+                            <div class="body_types">
+                                <div class="body_types-item"><img src="./images/tabs/marks/audi.svg" alt=""></div>
+                                <div class="body_types-name">Convertible</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button choose_button">Show all</button>
+            </div>
+        </section>
     </main>
 
-    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

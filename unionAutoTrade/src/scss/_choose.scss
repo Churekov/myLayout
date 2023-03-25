@@ -1,0 +1,75 @@
+.choose {
+    margin-bottom: 6rem;
+}
+.choose_title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.tabs {
+    margin-bottom: 4rem;
+}
+.tabs_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6.3rem;
+}
+.tab_title {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: black;
+    padding: 2.2rem 0;
+    border: 1px solid var(--no-active);
+    cursor: pointer;
+}
+.tab_title-body {
+    flex-grow: 1;
+    border-radius: 10px 0px 0px 10px;
+    
+} 
+.tab_title-brand {
+    flex-grow: 1;
+    border-radius: 0px 10px 10px 0px;
+} 
+.tabs_wrapper {
+}
+.tab_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hidden_tab-content {
+    display: none;
+}
+.body_types {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body_types-item {
+    margin-bottom: 1rem;
+}
+.body_types-name {
+    color: var(--blue);
+    letter-spacing: 0.01em;
+}
+.button {
+}
+.choose_button {
+    display: block;
+    margin: 0 auto;
+    font-family: inherit;
+    color: var(--blue);
+    padding: 1.1rem 8.6rem;
+    border: 1px solid var(--blue);
+    border-radius: .8rem;
+}
+.active_tab {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+}
+*:focus, *:active {
+    border-color: rgb(2, 2, 83);
+}
