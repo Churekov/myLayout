@@ -1,0 +1,60 @@
+.advantages {
+    margin-bottom: 16.7rem;
+}
+
+.advantages_cards {
+    border-radius: 3rem;
+    background-image: url(../images/Rectangle9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    gap: 1rem;
+    padding: 35rem 2.2rem 2.5rem;
+}
+
+.card {
+    color: #000;
+    background-color: #FFFFFF99;
+    border-radius: 1rem;
+    padding: 3rem 0 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        line-height: 130%;
+        margin-bottom: 3rem;
+        position: relative;
+        transition: .4s;
+        @media screen and (max-width:645px) {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            cursor: pointer;
+            &::before {
+                content: '+';
+                position: absolute;
+                display: block;
+                right: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    P {
+        @media screen and (max-width:645px) {
+            overflow: hidden;
+            max-height: 0;
+            transition: .3s;
+        }
+    }
+}
+
+.show {
+    max-height: 200rem;
+}
+h3.show::before {
+    content: '-';
+}

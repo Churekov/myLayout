@@ -7,9 +7,11 @@
 }
 .hot_deals_cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    justify-items: center;
     gap: 3.4rem 1.3rem;
     color: black;
+    margin-bottom: 6rem;
 }
 .cards_item {
     position: relative;
@@ -55,4 +57,9 @@
     padding: 1.45rem 8.3rem;
     border: 1px solid #000000;
     border-radius: 8px;
+}
+.hot_deals_foto {
+    display: block;
+    border-radius: 3rem;
+    width: 100%;
 }

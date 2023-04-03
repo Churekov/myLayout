@@ -22,6 +22,7 @@
     padding: 2.2rem 0;
     border: 1px solid var(--no-active);
     cursor: pointer;
+    transition: background .5s ease;
 }
 .tab_title-body {
     flex-grow: 1;
@@ -36,8 +37,15 @@
 }
 .tab_content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 3.5rem;
+}
+.tab_content-model {
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    column-gap: 3.5rem;
 }
 .hidden_tab-content {
     display: none;
