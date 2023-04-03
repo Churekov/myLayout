@@ -4,7 +4,8 @@
     background-position: bottom center;
     background-size: cover;
     border-radius: 0px 0px 30px 30px;
-    // height: 100vh;
+    height: 100vh;
+    position: relative;
 }
 .header_callback {
     padding: 1.85rem;
@@ -32,15 +33,15 @@
         &:nth-child(1) {
             margin-right: 2.1rem;
         }
-        &:nth-child(2) {
-            padding: 1.85rem 5.1rem;
-            background-color: black;
-            margin-right: 3rem;
-        }
         &:nth-child(3) {
             margin-right: 2rem;
         }
     }
+}
+.request {
+    padding: 1.85rem 5.1rem;
+    background-color: black;
+    margin-right: 3rem;
 }
 .nav {
     display: flex;
@@ -65,15 +66,65 @@
     padding-bottom: 36.6rem;
 }
 .promo_button {
-    position: relative;
-}
-.promo_button {
     cursor: pointer;
-    img {
+    a {
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #000000;
+        text-decoration: none;
+        text-align:center;
+        white-space: nowrap;
         display: block;
         position: absolute;
-        bottom: 0;
+        z-index: 10;
+        bottom: -1.5rem;
         right: 50%;
         transform: translateX(50%);
+        background-image: url(../images/Vec.svg);
+        padding: 1.9rem 14.5rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.4rem;
+    height: 1.8rem;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 2.4rem;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 1.8px;
+    }
+}
+@media screen and (max-width: 805px) {
+    .header_callback {
+        display: none;
+    }
+    .nav {
+        justify-content: space-between;
+        padding-top: 1.8rem;
+    }
+    .burger {
+        display: flex;
+        flex: 1;
+        padding: 2rem;
+        margin-right: 7.4rem;
+    }
+    .logo {
+        flex: 1;
+        img {
+            display: block;
+            max-width: 20rem;
+        }
+    }
+    .menu {
+        display: none;
     }
 }

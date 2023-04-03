@@ -1,0 +1,72 @@
+.how_buy {
+    margin-bottom: 11rem;
+}
+.how_buy_title-main {
+    margin: 0 auto;
+    max-width: 69rem;
+    text-align: center;
+    line-height: 145%;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.how_buy_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.how_buy_content {
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+    padding: 2rem .5rem 0 2rem;
+    min-width: 30.5rem;
+        .number {
+            font-size: 3.2rem;
+            letter-spacing: 0.01em;
+            color: #000000;
+            margin-bottom: 4rem;
+        }
+        .how_buy_title {
+            text-align: left;
+            margin-bottom: 2.4rem;
+        }
+}
+.info {
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 4rem;
+    display: inline-block;
+}
+.application {
+    flex: 1;
+}
+.contract {
+    flex: 3;
+}
+.pay {
+    flex: 2;
+}
+.delivery {
+    flex: 3;
+}
+.how_buy_request {
+    flex: 4;
+}
+.popup {
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    flex-wrap: wrap;
+}
+.how_buy_application {
+    display: block;
+    padding: 13px 78px;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: #010101;
+    border: 1px solid #4F4F4F;
+    border-radius: 8px;
+    white-space: nowrap;
+    margin-right: 6.2rem;
+    margin-bottom: 3rem;
+}
